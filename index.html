@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Ecosystem | Approachable Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              // Stripe-ish Dark Theme Palette
+              'navam-bg': '#020420', // Deep rich blue-black
+              'navam-surface': '#0f172a', // Slate 900
+              'navam-card': 'rgba(255, 255, 255, 0.03)',
+              'navam-gold': '#d4af37',
+              'brand-gold': '#d4af37',
+              'brand-purple': '#635bff', // Stripe purple
+              'brand-accent': '#00d4ff', // Cyan accent
+            },
+            backgroundImage: {
+              'stripe-gradient': 'linear-gradient(to right bottom, #0a0a0a, #0f172a, #1e1b4b)',
+              'hero-glow': 'radial-gradient(circle at 50% 50%, rgba(99, 91, 255, 0.15), rgba(0, 0, 0, 0))',
+              'grid-pattern': "url(\"data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E\")",
+            },
+            skew: {
+              '-6': '-6deg',
+              '6': '6deg',
+            },
+            animation: {
+              'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'gradient': 'gradient 8s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              gradient: {
+                '0%, 100%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'left center'
+                },
+                '50%': {
+                  'background-size': '200% 200%',
+                  'background-position': 'right center'
+                },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020420;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #020420;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+      /* Stripe-like Card Utility */
+      .stripe-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 12px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+      .stripe-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.4);
+        border-color: rgba(255, 255, 255, 0.2);
+      }
+      
+      /* Section Divider - Diagonal */
+      .diagonal-section {
+        position: relative;
+        z-index: 1;
+      }
+      .diagonal-section::before {
+        content: '';
+        position: absolute;
+        top: -50px; /* Adjust based on skew */
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: inherit;
+        transform: skewY(-6deg);
+        transform-origin: top left;
+        z-index: -1;
+      }
+
+      /* Grid Background Utility */
+      .bg-grid {
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                          linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 40px 40px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "gsap": "https://cdn.skypack.dev/gsap",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "ogl": "https://cdn.skypack.dev/ogl"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
