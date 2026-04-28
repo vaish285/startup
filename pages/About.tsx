@@ -26,7 +26,7 @@ const About = () => {
                 Where Vision Meets <br/> <span className="text-brand-gold">Execution.</span>
               </h1>
               <p className="text-xl text-slate-300 leading-relaxed font-light mb-8">
-                Startup Ecosystem is a unified platform built to simplify the journey of turning ideas into successful businesses. We bring together technology, innovation, marketing, and investment under one ecosystem so that startups and individuals don’t have to depend on multiple disconnected services.
+                ARTHANTA is a unified platform built to simplify the journey of turning ideas into successful businesses. We bring together technology, innovation, marketing, and investment under one ecosystem so that startups and individuals don’t have to depend on multiple disconnected services.
               </p>
               <p className="text-slate-400 leading-relaxed mb-8">
                 We are a hybrid entity — one part digital product studio, one part investment firm. We understand the frantic energy of a pre-seed round, the necessity of a pixel-perfect MVP, and the noise of the market.

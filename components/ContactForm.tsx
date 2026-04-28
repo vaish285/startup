@@ -155,7 +155,7 @@ const ContactForm: React.FC = () => {
         </div>
         <h3 className="text-3xl font-serif text-white mb-4">Request Received</h3>
         <p className="text-gray-300 max-w-md mx-auto leading-relaxed">
-          Thank you for contacting <span className="text-brand-gold font-bold">Startup Ecosystem</span>. We have received your project details and will be in touch within 24 hours.
+          Thank you for contacting <span className="text-brand-gold font-bold">ARTHANTA</span>. We have received your project details and will be in touch within 24 hours.
         </p>
         <button 
             onClick={() => setStatus('idle')}

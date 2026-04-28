@@ -17,8 +17,8 @@ export const submitLead = async (data: Lead): Promise<{ success: boolean; messag
         service_interest: data.service_interest,
         message: data.message,
         // Removed is_student_founder from email payload as requested
-        subject: `Startup Ecosystem Inquiry: ${data.name} - ${data.service_interest}`,
-        from_name: "Startup Ecosystem Website"
+        subject: `ARTHANTA Inquiry: ${data.name} - ${data.service_interest}`,
+        from_name: "ARTHANTA Website"
       }),
     });
 

@@ -27,7 +27,7 @@ const InvestorConnect = () => {
 
   const contactInvestor = (phone: string, name: string) => {
     const message = encodeURIComponent(
-      `Hello ${name}, I am interested in discussing investment opportunities via Startup Ecosystem.`
+      `Hello ${name}, I am interested in discussing investment opportunities via ARTHANTA.`
     );
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
   };

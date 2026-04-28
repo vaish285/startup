@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           <div className="col-span-1 md:col-span-2">
-            <span className="font-serif text-2xl font-bold tracking-wider text-white">Startup Ecosystem</span>
+            <span className="font-serif text-2xl font-bold tracking-wider text-white">ARTHANTA</span>
             <p className="mt-4 text-gray-400 max-w-sm text-sm leading-relaxed">
               Empowering startups with approachable intelligence. We build the digital foundation your visionary idea needs to thrive in a competitive market.
             </p>
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="mt-16 border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-xs">© {new Date().getFullYear()} Startup Ecosystem. All rights reserved.</p>
+          <p className="text-gray-500 text-xs">© {new Date().getFullYear()} ARTHANTA. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
              <span className="text-gray-600 text-xs">Designed for Visionaries</span>
           </div>

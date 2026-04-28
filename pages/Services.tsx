@@ -1496,7 +1496,7 @@ const DeckVisual = () => (
     >
       <div>
         <div className="text-lg md:text-xl font-serif font-bold mb-1">
-          Startup Ecosystem
+          ARTHANTA
         </div>
         <div className="text-[8px] md:text-[10px] text-gray-500 uppercase tracking-widest">
           Series A Deck
